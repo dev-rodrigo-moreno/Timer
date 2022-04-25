@@ -18,6 +18,7 @@ var stopit;
 
 
 start.addEventListener("click", () => {
+    start.style.display = "none"
     clearInterval(stopit)
     stopit = setInterval(() => {
         seconds++
@@ -44,10 +45,12 @@ function ZeroLeft(n) {
 }
 
 stop.addEventListener("click", () => {
+    start.style.display = "inline-block"
     clearInterval(stopit)
 })
 
 reset.addEventListener("click", () => {
+    start.style.display = "inline-block"
     clearInterval(stopit);
     seconds = 0
     minutes = 0
