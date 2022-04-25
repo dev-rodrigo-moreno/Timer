@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: AlarmClock;
+    src: url(assets/font/alarm\ clock.ttf);
+}
+
+
+    
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+#timer {
+    max-height: 200px;
+    max-width: 800px;
+    font-family: AlarmClock, sans-serif;
+    color: #3f9;
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    
+    font-size: 30px;
+    display: inline-block;
+    border: 1px solid;
+    color: white;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.2)
+}
+
+#start {
+    background-color: green;
+}
+
+#stop {
+    background-color: red;
+}
+
+@media screen and (max-width: 450px) {
+    #timer {
+        font-size: 80px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        font-size: 20px;      
+        width: 100px;
+        margin-top: 20px;
+    }
+}
