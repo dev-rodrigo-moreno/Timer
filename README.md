@@ -1,0 +1,2 @@
+# timer
+Practicing javascript
