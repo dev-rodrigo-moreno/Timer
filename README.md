@@ -1,2 +1,2 @@
 # Timer
-Practicing javascript
+setInterval
