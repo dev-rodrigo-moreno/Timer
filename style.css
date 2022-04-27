@@ -43,13 +43,15 @@ body {
     transition: 0.5s;
 }
 
+
 .button a {
     text-decoration: none;
     color: white;
 }
 
 .button:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 #start {
